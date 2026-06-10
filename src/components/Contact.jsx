@@ -12,7 +12,7 @@ export default function Contact() {
   };
 
   return (
-    <section style={styles.container}>
+    <section style={styles.container} id="contact">
       <motion.h2
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
