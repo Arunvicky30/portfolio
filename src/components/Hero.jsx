@@ -1,20 +1,46 @@
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
     <section style={styles.container}>
-      <h1 style={styles.title}>Hi, I'm Arun 👋</h1>
+      
+      <motion.h1
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        style={styles.title}
+      >
+        Hi, I'm Arun
+      </motion.h1>
 
-      <h2 style={styles.subtitle}>
+      <motion.h2
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        style={styles.subtitle}
+      >
         Frontend Developer (React)
-      </h2>
+      </motion.h2>
 
-      <p style={styles.text}>
-        I build fast, responsive websites & web apps for businesses and startups.
-      </p>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        style={styles.text}
+      >
+        I build high-performance, modern web apps and business websites that help companies get more customers.
+      </motion.p>
 
-      <div style={styles.buttons}>
-        <a href="#projects" style={styles.primaryBtn}>View Projects</a>
-        <a href="#contact" style={styles.secondaryBtn}>Contact Me</a>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        style={styles.buttons}
+      >
+        <a href="#projects" style={styles.primaryBtn}>View Work</a>
+        <a href="#contact" style={styles.secondaryBtn}>Contact</a>
+      </motion.div>
+
     </section>
   );
 }
@@ -27,26 +53,43 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
-    background: "#0f172a",
+    background: "radial-gradient(circle at top, #1e293b, #0f172a)",
     color: "white",
     padding: "20px",
   },
-  title: { fontSize: "3rem", marginBottom: "10px" },
-  subtitle: { fontSize: "1.5rem", color: "#38bdf8" },
-  text: { maxWidth: "500px", marginTop: "10px", opacity: 0.8 },
-  buttons: { marginTop: "20px", display: "flex", gap: "10px" },
+  title: {
+    fontSize: "4rem",
+    fontWeight: "700",
+  },
+  subtitle: {
+    fontSize: "1.5rem",
+    color: "#38bdf8",
+    marginTop: "10px",
+  },
+  text: {
+    maxWidth: "600px",
+    marginTop: "15px",
+    opacity: 0.8,
+    fontSize: "1.1rem",
+  },
+  buttons: {
+    marginTop: "25px",
+    display: "flex",
+    gap: "15px",
+  },
   primaryBtn: {
-    padding: "10px 20px",
+    padding: "12px 22px",
     background: "#38bdf8",
-    color: "black",
+    color: "#000",
+    borderRadius: "8px",
     textDecoration: "none",
-    borderRadius: "6px",
+    fontWeight: "600",
   },
   secondaryBtn: {
-    padding: "10px 20px",
-    border: "1px solid white",
-    color: "white",
+    padding: "12px 22px",
+    border: "1px solid #38bdf8",
+    color: "#38bdf8",
+    borderRadius: "8px",
     textDecoration: "none",
-    borderRadius: "6px",
   },
 };

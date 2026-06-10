@@ -1,33 +1,48 @@
+import { motion } from "framer-motion";
+
 export default function Contact() {
+  const handleWhatsApp = () => {
+    const message =
+      "Hi Arun, I saw your portfolio. I need a website for my business.";
+
+    window.open(
+      `https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
+  };
+
   return (
-    <section id="contact" style={styles.container}>
-      <h2>Contact Me</h2>
-
-      <p>Email: arunvicky1031@gmail.com</p>
-
-      <a
-        href="https://wa.me/917667881192"
-        target="_blank"
-        style={styles.button}
+    <section style={styles.container}>
+      <motion.h2
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
       >
-        Chat on WhatsApp
-      </a>
+        Let's Build Something
+      </motion.h2>
+
+      <p>Get a modern website for your business in 3–5 days.</p>
+
+      <button onClick={handleWhatsApp} style={styles.button}>
+        Message on WhatsApp
+      </button>
     </section>
   );
 }
 
 const styles = {
   container: {
-    padding: "80px 20px",
+    padding: "100px 20px",
     textAlign: "center",
+    background: "#020617",
+    color: "white",
   },
   button: {
-    display: "inline-block",
     marginTop: "20px",
-    padding: "10px 20px",
+    padding: "12px 20px",
     background: "#25D366",
+    border: "none",
+    borderRadius: "8px",
     color: "white",
-    textDecoration: "none",
-    borderRadius: "6px",
+    cursor: "pointer",
   },
 };
