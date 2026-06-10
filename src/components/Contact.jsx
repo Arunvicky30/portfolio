@@ -6,7 +6,7 @@ export default function Contact() {
       "Hi Arun, I saw your portfolio. I need a website for my business.";
 
     window.open(
-      `https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent(message)}`,
+      `https://wa.me/917667881192?text=${encodeURIComponent(message)}`,
       "_blank"
     );
   };
