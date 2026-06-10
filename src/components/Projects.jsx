@@ -75,7 +75,7 @@ const styles = {
     borderRadius: "12px",
     border: "1px solid #334155",
    transition: "all 0.3s ease",
-cursor: pointer,
+cursor: "pointer",
   },
   link: {
     color: "#38bdf8",
