@@ -16,8 +16,9 @@ const projects = [
   },
    {
     title: "Clinic Website",
-    desc: "Appointment booking + WhatsApp integration.",
-   status: "coming",
+    desc: "Appointment booking",
+   status: "live",
+     link:"https://arun-clinic-1037377663650.asia-southeast1.run.app/"
   },
 ];
 
