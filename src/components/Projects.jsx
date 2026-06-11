@@ -10,12 +10,13 @@ const projects = [
   {
     title: "Clinic Website",
     desc: "Appointment booking + WhatsApp integration.",
-    status: "coming",
+   status: "coming",
   },
   {
-    title: "Restaurant Website",
+    title: "Cafe Website",
     desc: "Modern menu + contact system.",
-    status: "coming",
+      status: "live",
+      link: "https://mycafe-522453897600.asia-southeast1.run.app/",   
   },
 ];
 
