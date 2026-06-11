@@ -7,16 +7,17 @@ const projects = [
     link: "https://arun-gpt-five.vercel.app/",
     status: "live",
   },
-  {
-    title: "Clinic Website",
-    desc: "Appointment booking + WhatsApp integration.",
-   status: "coming",
-  },
+ 
   {
     title: "Cafe Website",
     desc: "Modern menu + contact system.",
       status: "live",
       link: "https://mycafe-522453897600.asia-southeast1.run.app/",   
+  },
+   {
+    title: "Clinic Website",
+    desc: "Appointment booking + WhatsApp integration.",
+   status: "coming",
   },
 ];
 
