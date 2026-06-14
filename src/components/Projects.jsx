@@ -15,10 +15,22 @@ const projects = [
       link: "https://mycafe-522453897600.asia-southeast1.run.app/",   
   },
    {
+    title: "Naveen Muruku Kadai",
+    desc: "Fresh Traditional Sweets & Snacks",
+   status: "live",
+     link:"https://remix-naveen-murukku-kadai-420034308782.asia-southeast1.run.app/"
+  },
+   {
     title: "Clinic Website",
     desc: "Appointment booking",
    status: "live",
      link:"https://arun-clinic-1037377663650.asia-southeast1.run.app/"
+  },
+     {
+    title: "My Turf",
+    desc: "Turf booking",
+   status: "live",
+     link:"https://arun-turf.vercel.app/"
   },
 ];
 
