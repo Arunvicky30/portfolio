@@ -17,7 +17,7 @@ export default function Contact() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
       >
-        Let's Build Somethingg
+        Let's Build Something
       </motion.h2>
 
       <p>Get a modern website for your business in 3–5 days.</p>
